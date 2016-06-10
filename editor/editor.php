@@ -47,6 +47,16 @@ class editor extends plxPlugin {
 	                },
 	                placeholder: 'Tapez votre texte pour votre article'
 	            });
+       	        var editor = new MediumEditor('#nextum',{
+                toolbar: {
+                    buttons: ['bold', 'italic', 'underline', 'strikethrough', 'quote', 'anchor', 'image', 'justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull','pre','unorderedlist', 'orderedlist', 'removeFormat', 'h2', 'h3'],
+                },
+                buttonLabels: 'fontawesome',
+                anchor: {
+                    targetCheckbox: true
+                },
+                placeholder: 'Tapez votre texte pour votre article'
+            });     
 	        
 	    </script>
 
